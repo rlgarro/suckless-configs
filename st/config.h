@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Anonymous Pro:style=Bold:pixelsize=16";
+static char *font = "monospace:style=Regular:pixelsize=15";
 static int borderpx = 2;
 
 /*
@@ -122,7 +122,7 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#dedede",
-	"#000000",
+	"#1d2021",
 	"black",
 };
 
