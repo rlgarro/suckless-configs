@@ -1,18 +1,18 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Caskaydia Cove:style=Medium:size=11",
+static const int topbar             = 0;        /* 0 means bottom bar */
+static const char *fonts[]          = { "Spleen 32x64:style=Medium:size=14",
                                       };
-static const char dmenufont[]       = "Caskaydia Cove:style=Medium:size=11";
-static const char col_gray1[]       = "#333333";
+static const char dmenufont[]       = "Spleen 32x64:style=Medium:size=14";
+static const char col_gray1[]       = "#09090d";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#eeeeee";
-static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#005577";
+static const char col_gray3[]       = "#8897F4";
+static const char col_gray4[]       = "#000000";
+static const char col_cyan[]        = "#bd93f9";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5" }; 
+static const char *tags[] = { "I", "II", "III", "IV" }; 
 
 static const Rule rules[] = {
 	/* xprop(1):
