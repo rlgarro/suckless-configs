@@ -8,11 +8,11 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Spleen 32x64:style=Medium:size=14",
                                       };
 static const char dmenufont[]       = "Spleen 32x64:style=Medium:size=14";
-static const char col_gray1[]       = "#09090d";
+static const char col_gray1[]       = "#f1c4e0";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#8897F4";
+static const char col_gray3[]       = "#140a1d";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#bd93f9";
+static const char col_cyan[]        = "#8897F4";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
