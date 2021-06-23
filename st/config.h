@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Spleen 32x64:style=Medium:pixelsize=20";
+static char *font = "Spleen 32x64:style=Medium:pixelsize=21";
 static int borderpx = 2;
 
 /*
@@ -121,8 +121,8 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#f1c4e0",
-	"#09090d",
+	"#cccccc",
+	"#000000",
 	"black",
 };
 
@@ -195,13 +195,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-<<<<<<< HEAD
 	{ TERMMOD,              XK_P,           zoom,           {.f = +1} },
 	{ TERMMOD,              XK_M,           zoom,           {.f = -1} },
-=======
-	{ TERMMOD,              XK_P,       	zoom,           {.f = +1} },
-	{ TERMMOD,              XK_M,        	zoom,           {.f = -1} },
->>>>>>> 63f5d6a3ba9b0fc8d2f6c70a8bdc669cfa03fdc4
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
