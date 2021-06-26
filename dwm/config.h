@@ -4,15 +4,15 @@
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Spleen 32x64:style=Medium:size=14",
+static const int topbar             = 1;        /* 0 means bottom bar */
+static const char *fonts[]          = { "Tamsyn:style=Regular",
                                       };
-static const char dmenufont[]       = "Spleen 32x64:style=Medium:size=14";
+static const char dmenufont[]       = "Tamsyn:style=Regular";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#cccccc";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#83a598";
+static const char col_cyan[]        = "#00ff00";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },

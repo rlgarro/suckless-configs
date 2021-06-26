@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# fork from Per-core temperatures :
+# https://github.com/jaagr/polybar/wiki/User-contributed-modules#per-core-temperatures
+
+# Get information from cores temp thanks to sensors
+temp=$( sensors | grep -m 1 Tdie | awk '{print $2}' | cut -c2-3 )
+
+degree="°C"
+printf "%s%s\n" "$temp$degree"

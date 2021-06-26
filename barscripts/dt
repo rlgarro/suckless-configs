@@ -1,0 +1,3 @@
+#!/bin/bash
+dt=$(date '+%d/%m/%Y')
+printf "$dt\n"

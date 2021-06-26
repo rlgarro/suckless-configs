@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rootSpace=$( df -h | grep -m 1 ^/ | awk '{print $4}' )
+usedRootSpace=$( df -h | grep -m 1 ^/ | awk '{print $2}')
+homeSpace=$( df -h | grep -m 1 /home | awk '{print $4}' )
+sdbSpace=$( df -h | grep -m 1 $HOME/disks/SDB | awk '{print $4}' )
+
+#printf "root $rootSpace | home $homeSpace | sdb $sdbSpace\n"
+#printf "root $rootSpace | home $homeSpace\n"
+printf "$rootSpace/$usedRootSpace\n"

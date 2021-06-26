@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Spleen 32x64:style=Medium:pixelsize=21";
+static char *font = "Tamsyn:style=Regular:pixelsize=18";
 static int borderpx = 2;
 
 /*
@@ -121,7 +121,7 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+	"#ffffff",
 	"#000000",
 	"black",
 };

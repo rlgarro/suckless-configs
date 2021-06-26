@@ -1,0 +1,39 @@
+#!/bin/python3
+# -*- coding: utf-8 -*-
+
+# Procedure
+# Surf to https://openweathermap.org/city
+# Fill in your CITY
+# e.g. Antwerp Belgium
+# Check url
+# https://openweathermap.org/city/2803138
+# you will the city code at the end
+# create an account on this website
+# create an api key (free)
+# LANG included thanks to krive001 on discord
+
+
+import requests
+
+CITY = "3430310"
+API_KEY = "54ebd68c6d7f935d6e803b3d13d540a2"
+#API_KEY = "83075d9057cb7c9e7793aee04be1e0ce"
+UNITS = "Metric"
+UNIT_KEY = "C"
+ICON=""
+#UNIT_KEY = "F"
+LANG = "en"
+#LANG = "nl"
+#LANG = "hu"
+
+REQ = requests.get("http://api.openweathermap.org/data/2.5/weather?id={}&lang={}&appid={}&units={}".format(CITY, LANG,  API_KEY, UNITS))
+try:
+    # HTTP CODE = OK
+    if REQ.status_code == 200:
+        CURRENT = REQ.json()["weather"][0]["description"].capitalize()
+        TEMP = int(float(REQ.json()["main"]["temp"]))
+        print("{}, {} °{}".format(CURRENT, TEMP, UNIT_KEY))
+    else:
+        print("")
+except (ValueError, IOError):
+    print("Error: Unable print the data")

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#uptime=$( uptime | awk '{print $3}' | cut -c1-4 );
+uptime=$(uptime -p);
+printf "%s" "$uptime"
