@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
-
+          
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Tamsyn:style=Regular:pixelsize=18";
+static char *font = "Hack:style=Regular:pixelsize=14";
 static int borderpx = 2;
 
 /*
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
