@@ -10,7 +10,7 @@ static const char *fonts[]          = { "Hack Nerd Font Mono:style=Bold:pixelsiz
                                       };
 static const char dmenufont[]       = "Hack Nerd Font Mono:style=Bold:pixelsize=14";
 static const char col_gray1[]       = "#111111";
-static const char col_gray2[]       = "#444444";
+static const char col_gray2[]       = "#282828";
 static const char col_gray3[]       = "#cccccc";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#fe8019";
