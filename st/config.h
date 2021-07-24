@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack:style=Regular:pixelsize=14";
+static char *font = "Hack:style=Regular:pixelsize=15";
 static int borderpx = 2;
 
 /*
@@ -121,7 +121,7 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#ffffff",
+	"#eeeeee",
 	"#000000",
 	"black",
 };
