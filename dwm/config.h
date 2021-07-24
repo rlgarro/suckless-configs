@@ -4,11 +4,11 @@
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Hack:style=Bold:pixelsize=13",
+static const char *fonts[]          = { "Hack Nerd Font Mono:style=Bold:pixelsize=14",
                                       };
-static const char dmenufont[]       = "Hack:style=Bold:pixelsize=13";
+static const char dmenufont[]       = "Hack Nerd Font Mono:style=Bold:pixelsize=14";
 static const char col_gray1[]       = "#111111";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#cccccc";
@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5" };
+static const char *tags[] = { "1", "2", "3" };
 
 static const Rule rules[] = {
 	/* xprop(1):
