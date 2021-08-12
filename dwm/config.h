@@ -9,11 +9,11 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack Nerd Font Mono:style=Bold:pixelsize=12",
                                       };
 static const char dmenufont[]       = "Hack Nerd Font Mono:style=Bold:pixelsize=12";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#282828";
-static const char col_gray3[]       = "#999999";
-static const char col_gray4[]       = "#DCDCCC";
-static const char col_cyan[]        = "#974fda";
+static const char col_gray1[]       = "#974fda";
+static const char col_gray2[]       = "#DCDCCC";
+static const char col_gray3[]       = "#eeeeee";
+static const char col_gray4[]       = "#282828";
+static const char col_cyan[]        = "#999999";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -78,6 +78,7 @@ static const char *slock[]    = { "slock", NULL };
 static const char *firefox[]  = { "firefox", NULL };
 static const char *pulsemixer[]  = { "st", "-e", "pulsemixer" };
 static const char *intellij[]  = { "idea.sh", NULL };
+static const char *bluectl[]  = { "st", "-e", "bluetoothctl" };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -110,6 +111,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slock } },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = pulsemixer } },
 	{ MODKEY|ShiftMask,             XK_j,      spawn,          {.v = intellij } },
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          {.v = bluectl } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
